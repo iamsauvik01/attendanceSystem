@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body{
+  position: relative;
+}
+
+.bgImage{
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  object-fit: cover;
+  z-index: -10;
+} 
+
+.popup {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+  text-align: center;
+  padding-top: 200px;
+  font-size: 24px;
+  color: white;
+}
+
+.popup span{
+  color: Red;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.container{
+  height: 20vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+}
+
+.container img{
+width: auto;
+height: 100px;
+padding-top: 8px;
+}
+
+.container h1{
+  color: white;
+  text-shadow: 2px 2px 8px grey;
+}
+
+.header-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.header-container img{
+  width: 120px;
+  max-height: 120px;
+}
+
+.header-container h2{
+  font-size: 3rem;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+form{
+  min-height: 80vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  color: black;
+}
+
+form .table{
+  width: 50vw;
+  height: 250px;
+  padding: 0 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+form label{
+  font-family: 'Poppin', sans-serif;
+  font-size: 0.67rem;
+}
+
+
+.id-box{
+    height: 40px;
+    width:  400px;
+    padding: 7px 20px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+.submit-button{
+    height: 55px;
+    width: 150px;
+    outline: none;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    background-image: linear-gradient(to right bottom, #feffdc, #ffffff);
+    font-size: 1rem;
+    color: black;
+}
+
+.showAttendance{
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: white;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+}
